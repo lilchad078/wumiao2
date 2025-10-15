@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: #f9c92b;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.cat {
+  width: 1500;
+  height: auto;
+  object-fit: contain;
+}
+
+.icon-bar {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+}
